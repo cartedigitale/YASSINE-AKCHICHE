@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Carte de contact digitale de Yassine AKCHICHE">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta property="og:title" content="Yassine AKCHICHE">
+  <meta property="og:description" content="Carte de contact digitale de Yassine AKCHICHE">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cartedigitale.github.io/YASSINE-AKCHICHE/">
+  <meta property="og:image" content="https://cartedigitale.github.io/YASSINE-AKCHICHE/photo.jpg">
+
+  <title>Yassine AKCHICHE | Contact</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { background: #050505; }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at 50% 8%, #292929 0%, #111 36%, #050505 72%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:
+        max(25px, env(safe-area-inset-top))
+        max(25px, env(safe-area-inset-right))
+        max(25px, env(safe-area-inset-bottom))
+        max(25px, env(safe-area-inset-left));
+    }
+
+    a { -webkit-tap-highlight-color: transparent; }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: linear-gradient(145deg, rgba(255,255,255,.09), rgba(255,255,255,.025));
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 30px;
+      padding: 38px 25px 25px;
+      text-align: center;
+      box-shadow: 0 30px 100px rgba(0,0,0,.65);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 230px;
+      height: 230px;
+      background: rgba(255,255,255,.06);
+      filter: blur(75px);
+      top: -110px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .photo-wrapper {
+      width: 128px;
+      height: 128px;
+      margin: auto;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #fff, #777);
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 15px 35px rgba(0,0,0,.45);
+    }
+
+    .photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+
+    h1 {
+      margin-top: 22px;
+      font-size: 27px;
+      letter-spacing: -.5px;
+      font-weight: 750;
+      position: relative;
+      z-index: 1;
+    }
+
+    .business {
+      margin-top: 7px;
+      font-size: 13px;
+      letter-spacing: 3px;
+      font-weight: 800;
+      color: #d8d8d8;
+      position: relative;
+      z-index: 1;
+    }
+
+    .location {
+      margin-top: 13px;
+      color: #9a9a9a;
+      font-size: 12.5px;
+      line-height: 1.45;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-button {
+      width: 100%;
+      margin-top: 27px;
+      padding: 17px 20px;
+      display: block;
+      text-decoration: none;
+      background: #fff;
+      color: #080808;
+      border-radius: 16px;
+      font-size: 15px;
+      font-weight: 750;
+      transition: .2s ease;
+      box-shadow: 0 12px 30px rgba(0,0,0,.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-button:hover { transform: translateY(-2px); }
+    .contact-button:active { transform: scale(.98); }
+
+    .links {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255,255,255,.065);
+      border: 1px solid rgba(255,255,255,.09);
+      padding: 16px 6px;
+      border-radius: 16px;
+      font-size: 12px;
+      transition: .2s ease;
+    }
+
+    .link.full {
+      grid-column: 1 / -1;
+    }
+
+    .link:hover {
+      background: rgba(255,255,255,.12);
+      transform: translateY(-2px);
+    }
+
+    .link:active { transform: scale(.98); }
+
+    .contact-button:focus-visible,
+    .link:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 27px;
+      font-size: 23px;
+      margin-bottom: 7px;
+      font-weight: 800;
+    }
+
+    .social-svg {
+      width: 25px;
+      height: 25px;
+      display: block;
+    }
+
+    .number {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #9a9a9a;
+      position: relative;
+      z-index: 1;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: #626262;
+      font-size: 9px;
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 400px) {
+      body {
+        padding:
+          max(15px, env(safe-area-inset-top))
+          max(15px, env(safe-area-inset-right))
+          max(15px, env(safe-area-inset-bottom))
+          max(15px, env(safe-area-inset-left));
+      }
+
+      .card { padding: 32px 18px 22px; }
+      h1 { font-size: 24px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .contact-button, .link { transition: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+
+    <div class="photo-wrapper">
+      <img class="photo" src="photo.jpg" alt="Yassine AKCHICHE">
+    </div>
+
+    <h1>Yassine AKCHICHE</h1>
+
+    <div class="location">
+      📍 Tarbes, France
+    </div>
+
+    <a class="contact-button" href="contact.vcf" download="Yassine-AKCHICHE.vcf">
+      ＋ Ajouter aux contacts
+    </a>
+
+    <div class="links">
+
+      <a class="link"
+         href="tel:+33615910076"
+         aria-label="Appeler Yassine AKCHICHE">
+        <span class="icon" aria-hidden="true">📞</span>
+        Appeler
+      </a>
+
+      <a class="link"
+         href="https://wa.me/33615910076"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Contacter Yassine AKCHICHE sur WhatsApp">
+        <span class="icon" aria-hidden="true">💬</span>
+        WhatsApp
+      </a>
+
+      <a class="link"
+         href="https://www.google.com/maps/search/?api=1&amp;query=Tarbes%2C%20France"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Ouvrir l'adresse de Yassine AKCHICHE dans Google Maps">
+        <span class="icon" aria-hidden="true">📍</span>
+        Itinéraire
+      </a>
+
+      <a class="link"
+         href="https://www.instagram.com/yassine.akc/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Ouvrir le profil Instagram de Yassine AKCHICHE">
+        <span class="icon" aria-hidden="true">
+          <svg class="social-svg" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+          </svg>
+        </span>
+        Instagram
+      </a>
+
+    </div>
+
+    <div class="number">
+      +33 6 15 91 00 76
+    </div>
+
+    <footer>
+      DIGITAL BUSINESS CARD
+    </footer>
+
+  </main>
+</body>
+</html>
